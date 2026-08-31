@@ -83,11 +83,9 @@ where $\sigma_s$ is the scattering coefficient and $\sigma_a$ is the absorption 
 To account for the attenuation of light before it reaches each cloud sample, I shoot a secondary ray from the sample toward the light direction.
 Along this ray, I accumulate the optical depth through the density field and use the Beer–Lambert law to obtain the light transmittance.
 
-$$
-T_{\text{light}}
-=
-e^{-\int \sigma_t\,ds}
-$$
+```math
+T_{\text{light}} = e^{-\int \sigma_t\,ds}
+```
 
 This accounts for self-shadowing of the volume. Denser regions attenuate more light, causing less light to reach samples deeper inside the cloud. Before and after the light attenuation:
 
@@ -111,7 +109,7 @@ The parameter $g$ controls the directionality of scattering. Below shows g = 0.1
 ##### The Volumetric Equation
 Combining all these, the single-scattering contribution at each ray-marching sample is:
 
-$$
+```math
 \boxed{
 \Delta C
 =
@@ -121,7 +119,7 @@ T \cdot
 L_i \cdot f
 }
 
-$$
+```
 where:
 
 - $T$ : transmittance. 

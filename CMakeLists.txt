@@ -12,8 +12,9 @@ else()
     target_link_options(glfw INTERFACE -sUSE_GLFW=3)
 endif()
 
-add_subdirectory(webgpu)
-add_subdirectory(glfw3webgpu)
+add_subdirectory(third_party/glfw)
+add_subdirectory(extern/webgpu)
+add_subdirectory(extern/glfw3webgpu)
 
 add_executable(App
 	src/Main.cpp

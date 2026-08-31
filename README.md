@@ -20,8 +20,11 @@ In order to render fluffy, physically based clouds in real time, I focused on th
 
 
 **0. [Physically-based volume rendering](#0-physically-based-volume-rendering)**
+
 **1. [Procedural cloud shaping](#1-shaping-clouds-writeup-in-progress)**
+
 **2. [Lookdev and Colors](#2-lookdev-and-colors-writeup-in-progress)**
+
 **3. [Real-time performance optimizations](#3-optimizations)**
 
 
